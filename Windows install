@@ -1,0 +1,9 @@
+# FireBird
+On install choose:
+-server architecture: Classic Firebird Server
+-Run Firebird server as: Service
+-check Enable atuhorization for legacy Firebird clients
+
+if wanna change sysdba password run cmd as administrator and:
+ cmd: gsec -user sysdba -password masterkey(from gsec folder in firebird)
+ new prompt: GSEC> gsec -user sysdba -password password_set_to_install
