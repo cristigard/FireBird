@@ -7,3 +7,11 @@ On install choose:
 if wanna change sysdba password run cmd as administrator and:
  cmd: gsec -user sysdba -password masterkey(from gsec folder in firebird)
  new prompt: GSEC> gsec -user sysdba -password password_set_to_install
+
+
+#connect to a speficic database
+C:\Program Files\Firebird\Firebird_3_0>isql -user SYSDBA -password sgtst@22..
+Use CONNECT or CREATE DATABASE to specify a database
+SQL> CONNECT 'localhost:C:/SAGA C.3.0/0005/cont_baza.fdb' USER 'SYSDBA' PASSWORD 'password';
+Database: 'localhost:C:/SAGA C.3.0/0005/cont_baza.fdb', User: SYSDBA
+SQL> select * from articole;
