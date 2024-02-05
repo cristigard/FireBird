@@ -15,3 +15,5 @@ Use CONNECT or CREATE DATABASE to specify a database
 SQL> CONNECT 'localhost:C:/SAGA C.3.0/0005/cont_baza.fdb' USER 'SYSDBA' PASSWORD 'password';
 Database: 'localhost:C:/SAGA C.3.0/0005/cont_baza.fdb', User: SYSDBA
 SQL> select * from articole;
+COMMIT;
+
