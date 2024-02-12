@@ -1,0 +1,9 @@
+users and roles:
+https://www.youtube.com/watch?v=2SXqvhik03I
+
+
+#sysdba passord in ubuntu
+/etc/firebird/3.0/SYSDBA.password
+
+#conf in ubuntu
+/etc/firebird/3.0/firebird.conf
