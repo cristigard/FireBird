@@ -7,3 +7,6 @@ https://www.youtube.com/watch?v=2SXqvhik03I
 
 #conf in ubuntu
 /etc/firebird/3.0/firebird.conf
+
+sudo isql-fb
+CONNECT "/home/sgapi/SagaApi/0011/cont_baza.fdb" USER 'SYSDBA' PASSWORD 'pass';
