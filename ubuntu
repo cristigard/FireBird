@@ -16,6 +16,8 @@ CONNECT "/home/sgapi/SagaApi/0011/cont_baza.fdb" USER 'SYSDBA' PASSWORD 'pass';
 def get_fdb(table_name):
 
     try:
+        con = fdb.connect(dsn=f'127.0.0.1:/mnt/hgfs/shared/salis_accounting/saga_db/cont_baza.fdb', user='sysdba', password='pass', charset='UTF8') 
+        sau 
         con = fdb.connect(dsn=f'/mnt/hgfs/shared/salis_accounting/saga_db/cont_baza.fdb', user='sysdba', password='pass', charset='UTF8')
 
         # Create a Cursor object that operates in the context of Connection con:
