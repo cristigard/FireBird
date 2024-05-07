@@ -10,3 +10,24 @@ https://www.youtube.com/watch?v=2SXqvhik03I
 
 sudo isql-fb
 CONNECT "/home/sgapi/SagaApi/0011/cont_baza.fdb" USER 'SYSDBA' PASSWORD 'pass';
+
+
+
+def get_fdb(table_name):
+
+    try:
+        con = fdb.connect(dsn=f'/mnt/hgfs/shared/salis_accounting/saga_db/cont_baza.fdb', user='sysdba', password='pass', charset='UTF8')
+
+        # Create a Cursor object that operates in the context of Connection con:
+        cur = con.cursor()
+
+        # Execute the SELECT statement:
+        result = cur.execute(f"select * from {table_name}")
+
+        result_fetch_all = result.fetchall()
+
+        # Retrieve all rows as a sequence and print that sequence
+    except Exception as exc:
+        return {'error': str(exc)}
+    else:
+        return result_fetch_all
