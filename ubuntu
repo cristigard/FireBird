@@ -3,7 +3,7 @@ https://www.youtube.com/watch?v=2SXqvhik03I
 https://www.youtube.com/watch?v=Q7x7Oq7rZ3w
 
 
-#sysdba passord in ubuntu
+#sysdba passord in ubuntu => citeste ce scrie cu albastru sus in fisier
 /etc/firebird/3.0/SYSDBA.password
 
 #conf in ubuntu
